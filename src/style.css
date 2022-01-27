@@ -1,0 +1,74 @@
+*
+{
+    margin: 0;
+    padding: 0;
+}
+
+html,
+body
+{
+    overflow: hidden;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.webgl
+{
+    position: fixed;
+    top: 0;
+    left: 0;
+    outline: none;
+}
+
+.controls {
+    width: 200px;
+    height: 200px;
+    z-index: 2;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    border-radius: 50%;
+    color: #eee;
+    background: linear-gradient(to bottom, transparent 49.8%, 
+    #00FF00 49.8%, 
+    #00FF00 51.2%,  
+    transparent 50%),
+
+    linear-gradient(to right, transparent 49.8%, 
+    #00FF00 49.8%, 
+    #00FF00 51.2%,  
+    transparent 50%),
+
+    rgba(238, 238, 238, 0.4);
+    cursor: none;
+}
+
+.controls::before {
+    content: "X";
+    position: absolute;
+    color: #00FF00;
+    text-align: center;
+    top: calc(50% - 0.5em);
+    left: -2em;
+    font-size: 1em;   
+}
+
+.controls::after {
+    content: "Y";
+    position: absolute;
+    color: #00FF00;
+    text-align: center;
+    left: calc(50% - 0.25em);
+    top: -2em;
+    font-size: 1em;   
+}
+
+.joystick {
+    width: 25px;
+    height: 25px;
+    background: transparent;
+    border: 2px solid red;
+    border-radius: 50%;
+    position: absolute;
+}
+
+
